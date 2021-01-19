@@ -40,7 +40,7 @@ def normalize(input_string):
         elif normalized_string and normalized_string[-1] == ' ' and letter == ' ':
             continue
         normalized_string += letter.lower()
-    if(normalized_string[-1] == ' '):
+    if(normalized_string and normalized_string[-1] == ' '):
         normalized_string = normalized_string[:-1]
     return normalized_string
 
